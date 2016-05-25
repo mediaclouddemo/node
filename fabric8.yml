@@ -1,0 +1,13 @@
+---
+pipeline: "workflows/node/CanaryReleaseStageAndApprovePromote/Jenkinsfile"
+buildName: "node"
+codeReview: false
+links:
+  Git: "https://github.com/mediaclouddemo/node"
+  Job: "http://jenkins.apps.demolab.es/job/node"
+  Production: "http://172.30.8.247:80/kubernetes/pods?namespace=fabric8-production"
+  Staging: "http://172.30.8.247:80/kubernetes/pods?namespace=fabric8-staging"
+environments:
+  Staging: "fabric8-staging"
+  Production: "fabric8-production"
+useLocalFlow: true
